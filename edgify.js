@@ -15,6 +15,8 @@ $(document).ready(function() {
         var slightlyEdgier = notEdgy.replace(properNounPattern, function(x){
             return "Xx" + x + "xX";
         });
+        slightlyEdgier = slightlyEdgier.replace(/!/g, "!!1!!!1!");
+        slightlyEdgier = slightlyEdgier.replace(/the/gi, "teh");
         var edgyArray = slightlyEdgier.split(" ");
         edgyArray.forEach(function(word, index, array) {
             var letters = word.split("");
