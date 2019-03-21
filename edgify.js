@@ -10,22 +10,25 @@ $(document).ready(function() {
     $("#submit").on("click", function(button) {
         button.preventDefault();
          
-        var sentencePattern = /\b[A-Z][A-Za-z0-9\s]+(\.|\!|\?)/g;
+        var sentencePattern = /\b[A-Za-z0-9\s\,]+(\.|\!|\?)/g;
         var properNounPattern = /\b[A-Z][a-z]+\b/g;
         var thePattern = /\bthe\b/gi;
         var thisPattern = /\bthis\b/gi;
         var mePattern = /\bme\b/gi;
         var silentEPattern= /e\b/gi;
            
-        
+    
         var slightlyEdgier = notEdgy.replace(sentencePattern, function(x){
-            return "~*~*" + x + "*~*~";
+             return "~*~*" + x + "*~*~";
         });
 
-        
-        slightlyEdgier = slightlyEdgier.replace(properNounPattern, function(x){
+         slightlyEdgier = slightlyEdgier.replace(properNounPattern, function(x){
             return "Xx" + x + "xX";
         });
+
+
+        
+        
         slightlyEdgier = slightlyEdgier.replace(/!/g, "!!1!!!1!");
         slightlyEdgier = slightlyEdgier.replace(thePattern, "teh");
         slightlyEdgier = slightlyEdgier.replace(thisPattern, "dis");
