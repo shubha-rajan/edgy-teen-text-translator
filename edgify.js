@@ -6,11 +6,12 @@ $(document).ready(function() {
         console.log(notEdgy);
       })
     
-    
+   
+
     $("#submit").on("click", function(button) {
         button.preventDefault();
          
-        var sentencePattern = /\b[A-Za-z0-9\s\,]+(\.|\!|\?)/g;
+        var sentencePattern = /\b[A-Za-z0-9\s\,\']+(\.|\!|\?)/g;
         var properNounPattern = /\b[A-Z][a-z]+\b/g;
         var thePattern = /\bthe\b/gi;
         var thisPattern = /\bthis\b/gi;
@@ -65,5 +66,14 @@ $(document).ready(function() {
         $("#result").html(edgyArray.join(" "));   
     });
 
+    $("#tweet").on("click", function(button) {
+        button.preventDefault();
+        
+        var tweetText = $("#result").text() + "\n~ edgify your text at MakeMeEdgy.tk";
+        var URL = "https://twitter.com/intent/tweet?text=" + tweetText;
+        console.log(URL);
+        window.open(URL, 'newwindow', 'width=600,height=250');
+
+    });
         
 });
