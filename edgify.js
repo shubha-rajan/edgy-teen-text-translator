@@ -63,13 +63,13 @@ $(document).ready(function() {
             }
             array[index] = letters.join("")
         });
-        $("#result").html(edgyArray.join(" "));   
+        $("#result").html(edgyArray.join(" ")); 
     });
 
     $("#tweet").on("click", function(button) {
         button.preventDefault();
         
-        var tweetText = $("#result").text() + "\n~ edgify your text at MakeMeEdgy.tk";
+        var tweetText = $("#result").text() + "\n -- edgify your text at MakeMeEdgy.tk";
         var URL = "https://twitter.com/intent/tweet?text=" + tweetText;
         console.log(URL);
         window.open(URL, 'newwindow', 'width=600,height=250');
