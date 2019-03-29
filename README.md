@@ -4,7 +4,7 @@ Created for Stupid Hackathon Seattle.
 
 Screenshot:
 
-![Screenshot](https://www.dropbox.com/s/f46xwxmycorc4ee/Screenshot%202019-03-29%2000.16.17.png)
+![Screenshot](/screenshots/screenshot1.png)
 
 Try it yourself:
 https://makemeedgy.tk/
