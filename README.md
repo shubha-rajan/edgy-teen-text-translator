@@ -1,6 +1,7 @@
 # edgy-teen-text-translator
+Created for Stupid Hackathon Seattle- March 2019
 A useless text translator web app that converts text into something a 13 year old might type on myspace circa 2006.
-Created for Stupid Hackathon Seattle.
+
 
 Screenshots:
 
