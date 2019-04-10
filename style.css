@@ -41,6 +41,12 @@ h1 {
     margin:auto;
 }
 
+p {
+    text-align:center;
+    color:white;
+    background-color:black;
+}
+
 #input {
     background-color: black;
     width:100%;
@@ -113,5 +119,5 @@ button:hover {background-image:url("assets/sparkles.gif"); }
     margin:auto;
     text-align:center;
     background-color: black;
-    float:bottom;
+
   }
